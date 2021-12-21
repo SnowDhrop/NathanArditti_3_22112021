@@ -1,0 +1,18 @@
+.button{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 80px 80px 80px 80px;
+    background: linear-gradient(map-get($colors, secondary), map-get($colors, primary));
+    font-size: 15px;
+    color: map-get($colors, white);
+    box-shadow: 2px 3px 4px 2px map-get($colors, box-shadow);
+    cursor: pointer;
+
+    &__menu{
+        display: flex;
+        @include center;
+        padding: 15px 50px;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,19 @@
+@keyframes menu_deroulant{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
+}
+
+@keyframes check_box--check{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }
+}

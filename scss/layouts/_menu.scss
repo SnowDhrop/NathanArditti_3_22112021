@@ -1,0 +1,94 @@
+.menu{
+    background-color: map-get($colors, gris);
+    padding: 0px 20px;
+    padding-bottom: 50px;
+
+    @include desktop{
+        display: flex;
+        flex-direction: column;
+
+        &__entrees, &__plats, &__desserts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            & h2{
+                width: 100%;
+            }
+        }
+    }
+
+    & h2{
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding-top: 50px;
+
+        & div{
+            border-bottom: 3px solid map-get($colors, tertiary);
+            width: 50px ;
+        }
+    }
+
+
+
+    &__description{
+        display: flex;
+        opacity: 0;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:nth-child(2){
+            animation: $menu_deroulant $delay;
+        }
+
+        &:nth-child(3){
+            animation: $menu_deroulant $delay*2;
+        }
+
+        &:nth-child(4){
+            animation: $menu_deroulant $delay*3;
+        }
+
+        &:nth-child(5){
+            animation: $menu-deroulant $delay*4;
+        }
+
+        @include tablette{
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        @include desktop{
+            margin-left: 20px;
+            width: 400px;
+        }
+        
+        @include container--large{
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+
+
+        &--gauche{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 15px;
+            flex-grow: 1;
+
+            & p, h3{
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+        &--prix{
+            display: flex;
+            align-items: flex-end;
+            padding: 20px 20px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}

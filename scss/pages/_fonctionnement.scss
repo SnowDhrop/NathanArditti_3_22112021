@@ -1,0 +1,81 @@
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+
+    @include desktop{
+        margin: 80px auto;
+    }
+
+
+    &__alignement{
+        @include center;
+
+        @include desktop{
+            display: flex;
+            justify-content: space-around;
+            
+            margin: 0px;
+        }
+    }
+
+
+    &__container{
+        display: flex;
+        align-items: center;
+        @include container--large;
+        margin: 0px 20px;
+        margin-bottom: 25px;
+        padding: 25px 0px;
+        padding-right: 17px;
+        cursor: pointer;
+        
+        @include tablette{
+            padding-right: 50px;
+        }
+
+        @include desktop{
+            padding-right: 50px;
+            margin: 0px;
+        }
+
+        &:hover{
+            background-color: map-get($colors, primary-opacity);
+        }
+
+        &:hover i{
+            color: map-get($colors, primary);
+        }
+    }
+
+    &__number{
+        border-radius: 100% 100% 100% 100%;
+        padding: 5px 10px;
+        margin-left: -15px;
+        color: white;
+        background-color: map-get($colors, primary);
+    }
+
+    & i{
+        margin: 0px 20px;
+        font-size: 25px;
+        color: map-get($colors, icons-fonctionnement);
+    }
+
+    & h2{
+        margin-bottom: 25px;
+        margin-left: 20px;
+
+        @include tablette{
+            text-align: center;
+            margin: 25px 0px;
+        }
+
+    }
+
+    & p{
+        font-size: 17px;
+        vertical-align: middle;
+
+    }
+}

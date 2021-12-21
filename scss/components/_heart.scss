@@ -1,0 +1,28 @@
+.heart{
+    font-size: 27px;
+    cursor: pointer;
+    transition: color 0.5s; /* Les navigateurs ne supportent pas les transition de gradient */
+    
+    &:hover{
+        font-family: "FontAwesome";
+        content: "\f004";
+        background: linear-gradient(225deg , map-get($colors, primary), map-get($colors, secondary));
+        background-clip: text;
+        -webkit-background-clip: text; /* Background-clip ne marche pas avec chrome alors j'utilise le webkit. Cette pté sert à limiter le background au texte, ici le heart. */
+        color: transparent; /*Je met cette pté pour que la couleur du heart devienne transparente et donc que la couleur du background ressorte. */       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

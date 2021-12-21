@@ -1,0 +1,17 @@
+{
+  "name": "p3_arditti_nathan",
+  "version": "1.0.0",
+  "description": "Projets n°3 de OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch main.scss:../css/styles.css", 
+    "prefix": "postcss ../css/styles.css --use autoprefixer -d ../css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "c://wamp64/www/oc/git"
+  },
+  "author": "Nathan Arditti",
+  "license": "ISC",
+  "browserlist": "last 4 versions"
+}

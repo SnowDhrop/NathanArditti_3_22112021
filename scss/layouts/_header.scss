@@ -1,0 +1,92 @@
+#header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include center;
+
+    &__logo{
+        width: 180px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    &__reservation{
+        background-color: map-get($colors, gris);
+        text-align: center;
+        padding: 40px 0px;
+        width: 100%;
+
+        
+        & p{
+            margin: 0px 20px;
+        }
+    }
+
+    &__arrow{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 25px;
+    }
+}
+
+.title{
+        width: 100%;
+
+    &__photo{
+        @include tablette{
+            height: 300px;
+        }
+
+        @include desktop{
+            height: 350px;
+        }
+
+        &--size{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+
+    &__name{
+        @include container--large{
+            box-shadow: none;
+            border-radius: 50px 50px 0px 0px;
+        };
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 30px 0px;
+        margin-top: -47px;
+        position: relative;
+        z-index: 1;
+        font-size: 14px;
+        
+        & h1{
+            font-weight: 200;
+        }
+    }
+}
+
+.search{
+    background-color: map-get($colors, gris-fonce);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 0px -3px 3px #CFCFCF;
+    &__icon{
+        font-size: 20px;
+    }
+    &__input{
+        border: none;
+        outline: none;
+        background-color: map-get($colors, gris-fonce);
+        padding-left: 15px;
+    }
+}
+
+
+

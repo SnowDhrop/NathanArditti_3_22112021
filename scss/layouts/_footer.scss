@@ -1,0 +1,42 @@
+footer {
+    background-color: map-get($colors, black);
+    color: map-get($colors, white);
+    padding: 20px;
+
+    & ul{
+        list-style-type: none;
+        padding: 0px;
+
+        @include tablette{
+            text-align: center;
+        }
+
+        @include desktop{
+            text-align: center;
+        }
+    }
+
+    & li{
+        margin-bottom: 10px;
+    }
+
+    & a{
+        color: map-get($colors, white);
+    }
+
+    & h4{
+        font-size: 20px;
+        font-weight: 200;
+        margin-bottom: 15px;
+
+        @include tablette{
+            text-align: center;
+        }
+
+        @include desktop{
+            text-align: center;
+        }
+    }
+}
+
+    

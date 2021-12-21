@@ -1,0 +1,46 @@
+*, input{
+    font-family: Roboto, "Comic Sans MS", Arial, sans-serif;
+    margin: 0px;
+}
+
+h1, h4{
+    font-family: Shrikhand, Roboto, Roboto, Arial, sans-serif;
+    margin: 0px;
+}
+
+#slogan{
+    font-weight: 900;
+    font-size: 27px;
+}
+
+#header__reservation p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+h3, h4{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p, input{
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+input{
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+

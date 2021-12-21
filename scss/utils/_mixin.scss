@@ -1,0 +1,28 @@
+@mixin tablette{
+    @media all and (min-width: map-get($breakpoints, tablette_min)) and (max-width: map-get($breakpoints, tablette_max)){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media all and (min-width: map-get($breakpoints, desktop_min)){
+        @content;
+    }
+}
+
+@mixin center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin container--large{
+    border-radius: 20px 20px 20px 20px;
+    background-color: map-get($colors, gris);
+    box-shadow: 3px 4px 15px 0px map-get($colors, box-shadow);
+    font-weight: 700;
+    @content;
+}
+
+@mixin menu-deroulant{
+    animation: menu-deroulant 1s;
+}

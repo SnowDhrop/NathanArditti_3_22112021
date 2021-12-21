@@ -1,0 +1,25 @@
+.description{
+    &__box{
+        background-color: map-get($colors, tertiary);
+        display: flex;
+        align-items: center;
+        width: 0%;
+        transition: width 0.5s;
+
+        &--check{
+            font-size: 28px;
+            color: map-get($colors, white);
+            padding: 0px 20px;
+        }
+    }
+}
+
+.menu__description:hover{
+    .description__box{
+        width: 70px;
+    }
+
+    .description__box--check{
+        animation: 0.4s 0.1s check_box--check forwards;
+    }
+}
