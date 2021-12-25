@@ -1,6 +1,6 @@
 .menu{
     background-color: map-get($colors, gris);
-    padding: 0px 20px;
+    padding: 0px 10px;
     padding-bottom: 50px;
 
     @include desktop{
@@ -23,8 +23,9 @@
         margin-bottom: 10px;
         padding-top: 50px;
 
-        & div{
+        & span{
             border-bottom: 3px solid map-get($colors, tertiary);
+            display: block;
             width: 50px ;
         }
     }
@@ -75,6 +76,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
             padding: 15px;
+            padding-right: 10px;
             flex-grow: 1;
 
             & p, h3{
@@ -87,6 +89,7 @@
             display: flex;
             align-items: flex-end;
             padding: 20px 20px;
+            padding-left: 10px;
             font-weight: 600;
             font-size: 18px;
         }

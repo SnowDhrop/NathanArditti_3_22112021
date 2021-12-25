@@ -3,8 +3,9 @@
 @import "utils/variables.scss";
 @import "utils/maps.scss";
 @import "utils/mixin.scss";
-@import "base/bandeaux_infinis.scss";
 @import "base/fonts.scss";
+@import "components/loading_spinner.scss";
+@import "layouts/infinite_band.scss";
 @import "components/button.scss";
 @import "components/check-box.scss";
 @import "layouts/header.scss";
